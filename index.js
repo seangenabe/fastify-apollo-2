@@ -1,4 +1,4 @@
-const plugin = (fastify, opts) => {
+const plugin = async (fastify, opts) => {
   if (!opts || !opts.graphqlOptions) {
     throw new Error("Apollo Server requires options.")
   }

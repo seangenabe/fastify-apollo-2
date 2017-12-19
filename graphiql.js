@@ -1,6 +1,6 @@
 const { resolveGraphiQLString } = require('apollo-server-module-graphiql')
 
-const plugin = (fastify, opts) => {
+const plugin = async (fastify, opts) => {
   if (!opts || !opts.graphiqlOptions) {
     throw new Error("Apollo Server GraphiQL requires options.")
   }
