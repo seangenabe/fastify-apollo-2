@@ -1,3 +1,5 @@
+const { runHttpQuery } = require('apollo-server-core')
+
 const plugin = async (fastify, opts) => {
   if (!opts || !opts.graphqlOptions) {
     throw new Error("Apollo Server requires options.")
