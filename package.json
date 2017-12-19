@@ -1,0 +1,28 @@
+{
+  "name": "@seangenabe/fastify-apollo-2",
+  "version": "1.0.0",
+  "description": "Fastify and Apollo Server integration",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/seangenabe/fastify-apollo-2.git"
+  },
+  "keywords": [
+    "fastify",
+    "graphql",
+    "apollo"
+  ],
+  "author": "Sean Genabe <seangenabe@outlook.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/seangenabe/fastify-apollo-2/issues"
+  },
+  "homepage": "https://github.com/seangenabe/fastify-apollo-2#readme",
+  "dependencies": {
+    "apollo-server-core": "^1.3.2",
+    "apollo-server-module-graphiql": "^1.3.2"
+  }
+}
