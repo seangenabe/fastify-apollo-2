@@ -25,8 +25,8 @@ const plugin = async (fastify, opts) => {
     }
   }
 
-  fastify.get((request, reply) => handler('GET', request, reply))
-  fastify.post((request, reply) => handler('POST', request, reply))
+  fastify.get('/', (request, reply) => handler('GET', request, reply))
+  fastify.post('/', (request, reply) => handler('POST', request, reply))
 }
 
 module.exports = plugin
