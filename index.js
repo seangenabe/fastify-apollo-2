@@ -21,6 +21,8 @@ const plugin = async (fastify, opts) => {
       }
       if (err.isGraphQLError === true) {
         reply.code(err.statusCode)
+        reply.type('application/json')
+        reply.serializer(x => x)
         return err.message
       }
       throw err
