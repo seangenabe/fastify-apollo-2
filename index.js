@@ -13,6 +13,7 @@ const plugin = async (fastify, opts) => {
         query: method === 'POST' ? request.body : request.query
       })
 
+      reply.serializer(x => x)
       return gqlResponse
     }
     catch (err) {
