@@ -14,6 +14,7 @@ const plugin = async (fastify, opts) => {
       })
 
       reply.serializer(x => x)
+      reply.type('application/json')
       return gqlResponse
     }
     catch (err) {
